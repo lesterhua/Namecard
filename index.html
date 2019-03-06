@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="container mt-5">
+        <h1>Costumize your namecard</h1>
+    </header>
+    <div class="container">
+        <form>
+            <!-- 姓名 -->
+            <div class="form-group">
+                <input type="text" class="name" id="formName" placeholder="Your Name">
+                <div class="feedback small"></div>
+            </div>
+
+            <!-- 照片連結  -->
+            <div class="form-group">
+                <input type="url" class="photo" id="photo" placeholder="Link to your photo">
+                <div class="feedback small"></div>
+            </div>
+
+            <!--自我介紹-->
+            <div class="form-group">
+                <textarea type="textarea" class="intro" id="intro"
+                    placeholder="Introduce yourself in 200 words"></textarea>
+                <div class="feedback small"></div>
+            </div>
+
+            <!-- 選擇theme  -->
+            <div class="choose-theme clearfix">
+                <p>Choose the Theme:</p>
+
+                <div class="choose-button clearfix">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                            value="option1" checked>
+                        <label class="form-check-label" for="inlineRadio1">Light Theme</label>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                            value="option2">
+                        <label class="form-check-label" for="inlineRadio2">Dark Theme</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- submit按鍵 -->
+            <div class="submit">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+        </header>
+
+        <!--顯示名片  -->
+        <div class="col-md-6 py-3 clearfix">
+            <div class="light my-4 clearfix " id="nameCard">
+                <img class="clearfix" src="" alt="" id="cardImg">
+                <h3 id="cardName"></h3>
+                <div id="cardText"></div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
